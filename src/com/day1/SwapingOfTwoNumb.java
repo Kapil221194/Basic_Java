@@ -13,6 +13,10 @@ public class SwapingOfTwoNumb {
 		num1=num2;
 		num2=temp;
 		System.out.println("Numbers after swap "+num1+" "+num2);
+		num1=num1+num2;
+		num2=num1-num2;
+		num1=num1-num2;
+		System.out.println("Numbers swap using two variable "+num1+" "+num2);
 	}
 
 }

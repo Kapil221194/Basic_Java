@@ -10,7 +10,9 @@ class Account{
 	}
 }
 class Withdrawl extends Account{
-	
+	void Show() {
+		System.out.println(ac_num +" "+ac_type+" "+amount);
+	}
 	void Deduction(int d) {
 		System.out.println("Amount "+(amount - d));
 	}

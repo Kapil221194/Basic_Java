@@ -15,9 +15,9 @@ public class FindNumIsAutoMorphic {
 		
 			while (num > 0)
 	        {
-	            r=num/10;
-	            count++;
-	            break;
+				count++;
+				r=num/10;
+				break;
 	        }
 			int pow=(int)Math.pow(10, count);
 	        sqr= sq%pow;

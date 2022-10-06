@@ -7,13 +7,13 @@ public class CarDetails {
 	float price;
 	float gst;
 	
-	CarDetails(int model_no, String car_name, float price){
-		this.model_no=model_no;
-		this.car_name=car_name;
+	CarDetails(int model_no, String car_name, float price){  //parameterized constructor
+		this.model_no=model_no;								// avoid shadowing of instance variable
+		this.car_name=car_name;								
 		this.price=price;
 	}
-	CarDetails(){
-		this(2211, "Aventador", 125000);
+	CarDetails(){											//non parameterized constructor or default constructor
+		this(2211, "Aventador", 125000);					// constructor chaining
 		this.Display();
 		gst=(float) (price*0.125);
 		System.out.println("GST on price :"+gst);

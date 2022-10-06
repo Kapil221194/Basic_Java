@@ -1,70 +1,91 @@
 package com.day16;
 
-class Pen{
+class Pen {
 	private int price;
 	private String color;
 	private String brand_name;
-	
+
 	public void setPrice(int price) {
-		this.price=price;
+		this.price = price;
 	}
+
 	public void setColor(String color) {
-		this.color=color;
+		this.color = color;
 	}
-	public void setBrandName(String brand_name) {
-		this.brand_name=brand_name;
+
+	public void setPenBrandName(String brand_name) {
+		this.brand_name = brand_name;
 	}
+
 	public int getPrice() {
 		return price;
 	}
+
 	public String getColor() {
 		return color;
 	}
-	public String getBrandName() {
+
+	public String getPenBrandName() {
 		return brand_name;
 	}
 }
 
 public class Bag {
-	
+
 	private String brand_name;
 	private int price;
 	private Pen p;
-	
+
 	public void setBrandName(String brand_name) {
-		this.brand_name=brand_name;
+		this.brand_name = brand_name;
 	}
+
 	public void setPrice(int price) {
-		this.price=price;
+		this.price = price;
 	}
+
 	public void setPen(Pen p) {
-		this.p=p;
+		this.p = p;
 	}
+
 	public String getBrandName() {
 		return brand_name;
 	}
+
 	public int getPrice() {
 		return price;
 	}
+
 	public Pen getPen() {
 		return p;
 	}
+
 	public static void main(String[] args) {
 
-		Bag b=new Bag();
+		Bag b = new Bag();
 		b.setBrandName("WildCraft");
 		b.setPrice(1500);
-		//b.setPen(new Pen());
-		b.getPen().setBrandName("Cello");
-		b.getPen().setColor("Blue");
-		b.getPen().setPrice(20);
+		// b.setPen(new Pen());
+		//b.getPen().setBrandName("Cello");
+		//b.getPen().setColor("Blue");
+		//b.getPen().setPrice(20);
+
+		Pen p=new Pen();
+		p.setPenBrandName("ButterFly");
+		p.setColor("Blue");
+		p.setPrice(20);
+		//new Pen().setPenBrandName("ButterFly");
 		
+		
+		System.out.println(p.getPenBrandName());
+		System.out.println(p.getColor());
+		System.out.println(p.getPrice());
 		System.out.println(b.getBrandName());
 		System.out.println(b.getPrice());
-		System.out.println(b.getPen().getBrandName());
-		System.out.println(b.getPen().getColor());
-		System.out.println(b.getPen().getPrice());
-	
+		//System.out.println(b.getPen().getBrandName());
+		//System.out.println(b.getPen().getColor());
+		//System.out.println(b.getPen().getPrice());
+
 	}
 
 }
