@@ -8,7 +8,7 @@ class Employee
 	String name;
 	float salary;
 	
-	Employee(int id,String name,float salary)
+	public Employee(int id,String name,float salary)
 	{
 		this.id=id;
 		this.name=name;
@@ -48,7 +48,8 @@ public class EmployeeSalaryIncreased {
 			if(emp[i].salary<15000)
 			{
 				float incSal = emp[i].salary+emp[i].salary*0.10f;
-				System.out.println("\n"+emp[i]+" "+"Increamented salary is "+incSal);
+				emp[i].salary=incSal;
+				System.out.println("\n"+emp[i]);
 			}
 		}
 		

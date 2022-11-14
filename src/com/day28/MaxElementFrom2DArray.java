@@ -10,6 +10,7 @@ public class MaxElementFrom2DArray {
 		for(int i=0;i<a.length;i++)
 		{
 			int max=a[0][i];
+			max=Integer.MIN_VALUE;
 			for(int j=0;j<a[i].length;j++)
 			{
 				if(a[i][j]>max)
