@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class ReverseStringExceptFirstLast {
 
 	public static void revStringWord(String str) {
-		//String s1 = " ";
-	
 
 		String reverse=" ";
 		String sp[]=str.split(" ");
 		for(int i=0;i<sp.length;i++)
 		{
-			if(i!=0 && i!=sp.length-1) {
+			if(i!=0 && i!=sp.length-1) { 
 			String word=sp[i];
 			String rev=" ";
 			for(int j=word.length()-1;j>=0;j--)
